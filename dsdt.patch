@@ -1,0 +1,21 @@
+--- dsdt.dsl.orig	2024-06-30 23:58:25.419902337 -0400
++++ dsdt.dsl	2024-07-01 00:13:43.174559656 -0400
+@@ -18,7 +18,7 @@
+  *     Compiler ID      "INTL"
+  *     Compiler Version 0x20180313 (538444563)
+  */
+-DefinitionBlock ("", "DSDT", 1, "LENOVO", "AMD", 0x00001000)
++DefinitionBlock ("", "DSDT", 1, "LENOVO", "AMD", 0x00001001)
+ {
+     External (_PR_.C000, DeviceObj)
+     External (_PR_.C000.PPCV, IntObj)
+@@ -7774,8 +7774,7 @@
+                     })
+                     Return (ConcatenateResTemplate (SBFB, SBFG))
+                 }
+-
+-                If ((^^^PCI0.LPC0.H_EC.ECRD (RefOf (^^^PCI0.LPC0.H_EC.TPTY)) == 0x02))
++                Else
+                 {
+                     Name (SBFC, ResourceTemplate ()
+                     {
