@@ -34,7 +34,7 @@ Ouvrez votre terminal et copiez-collez la commande suivante.
 *Note : Ne lancez pas la commande globale avec `sudo`. Le script est conçu pour s'exécuter en utilisateur normal et appellera `sudo` de lui-même uniquement lorsqu'il aura besoin des privilèges système (comme pour modifier GRUB ou copier dans `/boot`).*
 
 ```bash
-wget [https://raw.githubusercontent.com/Dev-Noxis/touchpad_linux_lenovo_PW04P1JT/main/install.sh](https://raw.githubusercontent.com/Dev-Noxis/touchpad_linux_lenovo_PW04P1JT/main/install.sh) && chmod +x install.sh && ./install.sh
+wget https://raw.githubusercontent.com/Dev-Noxis/touchpad_linux_lenovo_PW04P1JT/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 Laissez-vous ensuite guider par les options affichées à l'écran.
